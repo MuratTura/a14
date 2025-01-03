@@ -1,0 +1,2233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /*overflow: hidden;*/
+}
+
+/* menu */
+
+/* menuicon start */
+.container2 {
+    width: 100vw;
+    height: 100vh;
+}
+
+.music_box {
+    margin: 0px;
+    display: flex;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    transform: translate(25px, -25px);
+    top: 92%;
+    left: 1%;
+    cursor: pointer;
+    transition: 0.8s;
+    z-index: 105;
+}
+
+.bor1,
+.bor2,
+.bor3 {
+    margin: -8px;
+    background-color: #14ff72cb;
+    width: 30px;
+    height: 8px;
+    border-radius: 3px;
+    transform: translate(0px, 25px)rotate(90deg);
+    transition: 0.6s;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+}
+
+
+.bor1 {
+    margin-left: 0px;
+    opacity: 1;
+}
+
+.bor3 {
+    margin-left: -35px;
+    opacity: 1;
+}
+
+.active.music_box {
+    display: block;
+    position: fixed;
+    height: 50px;
+    transform: translate(25px, -25px);
+    top: 92%;
+    left: 1%;
+    cursor: pointer;
+    transition: 0.8s;
+    z-index: 105;
+}
+
+.active .bor1 {
+    opacity: 1;
+    border-radius: 5px;
+    background-color: #14ff72cb;
+    box-shadow: 0 0 0px 0
+}
+
+.active .bor2 {
+    width: 30px;
+    border-radius: 5px;
+    transform: translate(18px, 35px)rotate(150deg);
+    background-color: #14ff72cb;
+    box-shadow: 0 0 0px 0
+}
+
+.active .bor3 {
+    width:30px;
+    transform: translate(45px, 20px)rotate(33deg);
+    background-color: #14ff72cb;
+    border-radius: 5px;
+    box-shadow: 0 0 0px 0
+}
+
+.musicmp3 {
+    display: none;
+    transform: translate(20px, -30px)
+}
+
+.active .musicmp3 {
+    display: flex;
+    transform: translate(60px, 0px)
+}
+
+
+.menu_icon_box {
+    position: fixed;
+    height: 50px;
+    top: 10%;
+    left: 92%;
+    cursor: pointer;
+    transition: 0.8s;
+    z-index: 105;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    margin: 6px;
+    background: #f4ff00;
+    width: 40px;
+    height: 5px;
+    border-radius: 4px;
+    transition: 0.6s;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0);
+}
+
+.active .bar1 {
+    transform: translate(0px, 14px)rotate(-135deg);
+    background-color: #14ff72cb;
+}
+
+.active .bar2 {
+    opacity: 0;
+}
+
+.active .bar3 {
+    transform: translate(0px, -14px)rotate(135deg);
+    background-color: #14ff72cb;
+}
+
+.menu_icon_box:hover {
+    transform: scale(1.2);
+}
+
+.social_box {
+    position: fixed;
+    margin-top: 25px;
+    color: #f4ff00;
+    top: 20%;
+    left: 92%;
+    cursor: pointer;
+    transition: 0.8s;
+    z-index: 105;
+}
+.sosyal_medya_1 {
+    scale: 1.5;
+    margin: 10px;
+    color: #f4ff00;
+    padding: px;
+    list-style-type: none;
+    text-decoration: none;
+    transition: .8s;
+}
+.sosyal_medya_1 li{
+    padding: 25%;
+}
+.sosyal_medya_1 li:hover {
+    transform: scale(1.5);
+    transition: .8s;
+}
+
+.iconlar{
+    color: #14ff72cb;
+}
+
+/* menuicon end */
+
+.navvv {
+    display: none;
+    pointer-events: none;
+    padding: 25px;
+    margin-top: -850px;
+    width: 100%;
+    height: calc(100vh + 150px);
+    overflow: hidden;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 1s;
+    z-index: 103;
+}
+
+.active.navvv {
+    display: inline-block;
+    pointer-events: fill;
+}
+
+.icerik {
+    display: inline-block;
+    position: fixed;
+    margin-top: 15%;
+    margin-left: 30%;
+    font-size: 50px;
+    font-weight: bolder;
+    list-style-type: none;
+    transition: 1s;
+}
+
+.icerik .menu__item a {
+    color: #14ff72cb;
+    font-size: 50px;
+    text-decoration: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.icerik .menu__item {
+    text-align: center;
+    font-size: 50px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.menu__item:hover {
+    text-shadow: 2px 2px 2px rgba(237, 247, 53, .5);
+    transform: scale(1.5);
+}
+
+.menu__item a:hover {
+    color: #fff;
+}
+
+#check1:checked+.navvv {
+    display: inline-block;
+
+}
+
+/* Header section */
+
+
+/* Header section */
+
+
+
+/* carousel */
+
+.carousel {
+    width: 100%;
+    height: 100vh;
+    margin-top: 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel .list .item {
+    width: 180px;
+    height: 250px;
+    position: absolute;
+    top: 80%;
+    transform: translateY(-70%);
+    left: 70%;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    background-position: 50% 50%;
+    background-size: cover;
+    z-index: 100;
+    transition: 1s;
+}
+
+.carousel .list .item:nth-child(1),
+.carousel .list .item:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel .list .item:nth-child(3) {
+    left: 67%;
+}
+
+.carousel .list .item:nth-child(4) {
+    left: calc(67% + 200px);
+}
+
+.carousel .list .item:nth-child(5) {
+    left: calc(67% + 400px);
+}
+
+.carousel .list .item:nth-child(6) {
+    left: calc(67% + 600px);
+}
+
+.carousel .list .item:nth-child(n+7) {
+    left: calc(67% + 800px);
+    opacity: 0;
+}
+
+.list .item .content {
+    position: absolute;
+    top: 40%;
+    left: 100px;
+    transform: translateY(-50%);
+    width: 400px;
+    text-align: left;
+    color: #fff;
+    display: none;
+}
+
+.list .item:nth-child(2) .content {
+    display: block;
+}
+
+.content .title {
+    font-size: 80px;
+    text-transform: none;
+    color: #f4ff00;
+    font-weight: bold;
+    line-height: 1;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+
+.content .name {
+    font-size: 75px;
+    text-transform: none;
+    font-weight: bold;
+    line-height: 1;
+    text-shadow: 3px 4px 4px rgba(244, 255, 0, );
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.6s 1 forwards;
+}
+
+.content .des {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    margin-left: 5px;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.9s 1 forwards;
+}
+
+.content .btn {
+    display: none;
+    margin-left: 5px;
+
+    opacity: 0;
+    animation: animate 1s ease-in-out 1.2s 1 forwards;
+}
+
+.content .btn button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border: 2px solid #fff;
+}
+
+.content .btn button:nth-child(1) {
+    margin-right: 15px;
+}
+
+.content .btn button:nth-child(2) {
+    background: transparent;
+    color: #f4ff00;
+    border: 2px solid #fff;
+    transition: 0.3s;
+}
+
+.content .btn button:nth-child(2):hover {
+    background-color: #f4ff00;
+    color: #fff;
+    border-color: #f4ff00;
+}
+
+
+@keyframes animate {
+
+    from {
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+
+/* Carousel */
+
+
+/* next prev arrows */
+
+.arrows {
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    z-index: 100;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.arrows button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f4ff00;
+    color: #000;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    font-family: monospace;
+    font-weight: bold;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.arrows button:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+/* time running */
+.carousel .timeRunning {
+    position: absolute;
+    z-index: 1000;
+    width: 0%;
+    height: 4px;
+    background-color: #f4ff00;
+    left: 0;
+    top: 0;
+    animation: runningTime 6s linear 1 forwards;
+}
+
+@keyframes runningTime {
+
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+/* anasayfa end */
+/* hakkimizda start */
+
+#hakkimizda {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(1, 30, 30);
+    width: 100%;
+    height: calc(100vh + 80px);
+    margin-top: 0px;
+    overflow: visible;
+    position: relative;
+}
+
+.container {
+    z-index: 99;
+    display: inline-block;
+    position: relative;
+}
+
+.hakkimizda_img {
+    display: inline-block;
+    position: relative;
+    width: 49%;
+    height: 100%;
+    overflow: auto;
+}
+
+#zaman {
+    padding: 0;
+    max-height: 98%;
+    min-width: 98%;
+    transition: 2s;
+}
+
+#zaman:hover {
+    transform: scale(1.3);
+}
+
+.hakkimizda_baslik {
+    padding-left: 0%;
+    padding-bottom: 8%;
+    display: inline-block;
+    position: relative;
+    width: 49%;
+    height: 90%;
+    overflow: auto;
+}
+
+/* hakkimizda end */
+
+/* hizmet sunumlari start */
+
+#hizmetler {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(1, 30, 30);
+    width: 100%;
+    height: calc(100vh + 80px);
+    margin-top: 0px;
+    overflow: auto;
+    position: relative;
+}
+
+.container {
+    z-index: 99;
+    display: flex;
+    position: relative;
+}
+
+.hizmet-liste {
+    padding-left: 40px;
+    display: blok;
+    position: relative;
+    width: 50vw;
+    height: 100%;
+}
+
+.container1 {
+    margin-top: 18px;
+    padding-left: 0px;
+    font-size: 25px;
+    color: #f4ff00;
+}
+
+.liste {
+    padding-top: 0px;
+    list-style-type: none;
+}
+
+.eleman {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.eleman:hover {
+    transform: scale(1.05);
+    color: #14ff72cb;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.hizmetler_img {
+    display: inline-block;
+    position: relative;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#zaman1 {
+    padding: 0;
+    max-height: 100%;
+    min-width: 100%;
+    transition: 2s;
+}
+
+#zaman1:hover {
+    transform: scale(1.3);
+}
+
+.resimler {
+    width: 100%;
+}
+
+.item1 {
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    top: 80%;
+    transform: translateY(-70%);
+    left: 69%;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    background-position: 50% 50%;
+    background-size: cover;
+    z-index: 100;
+    transition: 1s;
+}
+
+.item2 {
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    top: 80%;
+    transform: translateY(-70%);
+    left: 53%;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    background-position: 50% 50%;
+    background-size: cover;
+    z-index: 101;
+    transition: 1s;
+}
+
+.item3 {
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    top: 80%;
+    transform: translateY(-70%);
+    left: 85%;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    background-position: 50% 50%;
+    background-size: cover;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet1 h2 {
+    color: #f4ff00;
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet1 ul {
+    background-color: rgba(0, 0, 0, 0.4);
+    font-weight: 700;
+    color: #14ff72cb;
+    position: absolute;
+    top: 18%;
+    left: 58%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet1 ul li {
+    margin-top: 5px;
+}
+
+.hizmet1 {
+    display: none;
+}
+
+.active.hizmet1 {
+    display: flex;
+}
+
+.hizmet2 h2 {
+    color: #f4ff00;
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet2 ul {
+    font-weight: 700;
+    color: #14ff72cb;
+    position: absolute;
+    top: 18%;
+    left: 58%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet2 ul li {
+    margin-top: 5px;
+}
+
+.hizmet2 {
+    display: none;
+}
+
+.active.hizmet2 {
+    display: flex;
+}
+
+.hizmet3 h2 {
+    color: #f4ff00;
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet3 ul {
+    font-weight: 700;
+    color: #14ff72cb;
+    position: absolute;
+    top: 18%;
+    left: 58%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet3 ul li {
+    margin-top: 5px;
+}
+
+.hizmet3 {
+    display: none;
+}
+
+.active.hizmet3 {
+    display: flex;
+}
+
+.hizmet4 h2 {
+    color: #f4ff00;
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet4 ul {
+    font-weight: 700;
+    color: #14ff72cb;
+    position: absolute;
+    top: 18%;
+    left: 58%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet4 ul li {
+    margin-top: 5px;
+}
+
+.hizmet4 {
+    display: none;
+}
+
+.active.hizmet4 {
+    display: flex;
+}
+
+.hizmet5 h2 {
+    color: #f4ff00;
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet5 ul {
+    font-weight: 700;
+    color: #14ff72cb;
+    position: absolute;
+    top: 18%;
+    left: 58%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet5 ul li {
+    margin-top: 5px;
+}
+
+.hizmet5 {
+    display: none;
+}
+
+.active.hizmet5 {
+    display: flex;
+}
+
+.hizmet6 h2 {
+    color: #f4ff00;
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet6 ul {
+    font-weight: 700;
+    color: #14ff72cb;
+    position: absolute;
+    top: 18%;
+    left: 58%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet6 ul li {
+    margin-top: 5px;
+}
+
+.hizmet6 {
+    display: none;
+}
+
+.active.hizmet6 {
+    display: flex;
+}
+
+.hizmet7 h2 {
+    color: #f4ff00;
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet7 ul {
+    font-weight: 700;
+    color: #14ff72cb;
+    position: absolute;
+    top: 18%;
+    left: 58%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet7 ul li {
+    margin-top: 5px;
+}
+
+.hizmet7 {
+    display: none;
+}
+
+.active.hizmet7 {
+    display: flex;
+}
+
+.hizmet8 h2 {
+    color: #f4ff00;
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet8 ul {
+    font-weight: 700;
+    color: #14ff72cb;
+    position: absolute;
+    top: 18%;
+    left: 58%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet8 ul li {
+    margin-top: 5px;
+}
+
+.hizmet8 {
+    display: none;
+}
+
+.active.hizmet8 {
+    display: flex;
+}
+
+.hizmet9 h2 {
+    color: #f4ff00;
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet9 ul {
+    font-weight: 700;
+    color: #14ff72cb;
+    position: absolute;
+    top: 18%;
+    left: 58%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet9 ul li {
+    margin-top: 5px;
+}
+
+.hizmet9 {
+    display: none;
+}
+
+.active.hizmet9 {
+    display: flex;
+}
+
+.hizmet10 h2 {
+    color: #f4ff00;
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet10 ul {
+    font-weight: 700;
+    color: #14ff72cb;
+    position: absolute;
+    top: 18%;
+    left: 58%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet10 ul li {
+    margin-top: 5px;
+}
+
+.hizmet10 {
+    display: none;
+}
+
+.active.hizmet10 {
+    display: flex;
+}
+
+.hizmet11 h2 {
+    color: #f4ff00;
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet11 ul {
+    font-weight: 700;
+    color: #14ff72cb;
+    position: absolute;
+    top: 18%;
+    left: 58%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet11 ul li {
+    margin-top: 5px;
+}
+
+.hizmet11 {
+    display: none;
+}
+
+.active.hizmet11 {
+    display: flex;
+}
+
+.hizmet12 h2 {
+    color: #f4ff00;
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet12 ul {
+    font-weight: 700;
+    color: #14ff72cb;
+    position: absolute;
+    top: 18%;
+    left: 58%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.hizmet12 ul li {
+    margin-top: 5px;
+}
+
+.hizmet12 {
+    display: none;
+}
+
+.active.hizmet12 {
+    display: flex;
+}
+
+
+/* hizmet sunumlari end */
+
+
+
+/* sayılarla biz start*/
+
+#biz {
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    overflow: visible;
+    position: relative;
+
+}
+
+.bizkimiz {
+    background-image: url(img/main_page/aa\ \(2\).jpeg);
+    background-size: auto;
+}
+
+.bizkimiz::before {
+    position: absolute;
+    width: min(1400px, 90vw);
+    top: 10%;
+    left: 50%;
+    height: 80%;
+    transform: translateX(-50%);
+    content: '';
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    pointer-events: none;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .slider {
+    position: absolute;
+    width: 130px;
+    height: 150px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 30s linear infinite;
+    z-index: 2;
+}
+
+@keyframes autoRun {
+    from {
+        transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+    }
+
+    to {
+        transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+    }
+}
+
+.banner .slider .item {
+    padding: 2px;
+    border-radius: 5px;
+    background-color: #000;
+    position: absolute;
+    inset: 0 0 0 0;
+    transform:
+        rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(500px);
+}
+
+.banner .slider .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.banner .contentt {
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(100%, 100vw);
+    height: max-content;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.counter-board-number {
+    font-family: 'ICA Rubrik';
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1em;
+    color: #f4ff00;
+    position: relative;
+}
+
+.banner .contentt p {
+    font-family: 'ICA Rubrik';
+    font-size: 40px;
+    line-height: 1em;
+    color: #f4ff00;
+    position: relative;
+}
+
+/* sayılarla biz start*/
+
+/* iletişim start*/
+
+#iletisim {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0px;
+    overflow: visible;
+    position: relative;
+    background-color: #f4ff00;
+
+}
+
+.iletisim_main {
+    background-color: #fff;
+    z-index: 99;
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    position: relative;
+}
+
+.maps {
+    background-color: #fff;
+    padding-bottom: 0%;
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.destek {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    place-items: center;
+    width: 49%;
+    height: 100%;
+    overflow: auto;
+    font-size: 17px;
+    list-style-type: none;
+}
+
+.logo_footer{
+    display: grid;
+    place-items: center;
+    margin-top: 5%;
+    transition: .8s;
+}
+
+.logo_footer img:hover {
+    transform: scale(1.1);
+    transition: .8s;
+}
+.telefon {
+    display: grid;
+    place-items: center;
+    margin-left: 5px;
+    padding-top: 25px;
+    font-weight: bolder;
+}
+
+.mail {
+    display: grid;
+    place-items: center;
+    margin-left: 5px;
+    padding-top: 25px;
+    font-weight: bolder;
+}
+
+.address {
+    display: grid;
+    place-items: center;
+    margin-left: 5px;
+    padding-top: 25px;
+    font-weight: bolder;
+}
+
+.sosyal{
+    display: grid;
+    place-items: center;
+    margin: 5px;
+    margin-top: 15px;
+}
+
+.sosyal_medya{
+    margin-top: 20px;
+    list-style-type: none;
+    text-decoration: none;
+}
+.sosyal li:hover {
+    transform: scale(1.1);
+    transition: .8s;
+}
+
+/* iletişim end*/
+
+
+/* Responsive Design */
+
+@media screen and (max-width: 1230px) {
+/* anasayfa start */
+.carousel .list .item:nth-child(3) {
+    left: 55%;
+}
+
+.carousel .list .item:nth-child(4) {
+    left: calc(73%);
+}
+
+.carousel .list .item:nth-child(5) {
+    left: calc(92%);
+}
+
+.carousel .list .item:nth-child(6) {
+    left: calc(92% + 200px);
+}
+
+.carousel .list .item:nth-child(n+7) {
+    left: calc(92% + 400px);
+    opacity: 0;
+}
+.icerik {
+    margin-top: 15%;
+    margin-left: 25%;
+    font-size: 45px;
+}
+
+.icerik .menu__item a {
+    font-size: 45px;
+    margin-top: 10px;
+}
+
+.icerik .menu__item {
+    font-size: 45px;
+    margin-top: 15px;
+}
+/* anasayfa end */
+/* hakkımızda start */
+.hakkimizda_baslik {
+    font-size: 14px;
+}
+/* hakkımızda end */
+/* hizmet sunumlari start */
+.container1 {
+    margin-top: 25px;
+    font-size: 22px;
+}
+.eleman {
+    margin-top: 15px;
+    font-size: 18px;
+}
+.item1 {
+    width: 160px;
+    height: 190px;
+    left: 69%;
+}
+
+.item2 {
+    width: 160px;
+    height: 190px;
+    left: 53%;
+}
+
+.item3 {
+    width: 160px;
+    height: 190px;
+    left: 85%;
+}
+.hizmet1 h2 {
+    font-size: 24px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet1 ul {
+    font-size: 16px;
+    top: 13%;
+}
+.hizmet2 h2 {
+    font-size: 24px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet2 ul {
+    font-size: 16px;
+    top: 13%;
+}
+.hizmet3 h2 {
+    font-size: 24px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet3 ul {
+    font-size: 16px;
+    top: 13%;
+}
+.hizmet4 h2 {
+    font-size: 24px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet4 ul {
+    font-size: 16px;
+    top: 13%;
+}
+.hizmet5 h2 {
+    font-size: 24px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet5 ul {
+    font-size: 16px;
+    top: 13%;
+}
+.hizmet6 h2 {
+    font-size: 24px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet6 ul {
+    font-size: 16px;
+    top: 13%;
+}
+.hizmet7 h2 {
+    font-size: 24px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet7 ul {
+    font-size: 16px;
+    top: 13%;
+}
+.hizmet8 h2 {
+    font-size: 24px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet8 ul {
+    font-size: 16px;
+    top: 13%;
+}
+.hizmet9 h2 {
+    font-size: 24px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet9 ul {
+    font-size: 16px;
+    top: 13%;
+}
+.hizmet10 h2 {
+    font-size: 24px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet10 ul {
+    font-size: 16px;
+    top: 13%;
+}
+.hizmet11 h2 {
+    font-size: 24px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet11 ul {
+    font-size: 16px;
+    top: 13%;
+}
+.hizmet12 h2 {
+    font-size: 24px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet12 ul {
+    font-size: 16px;
+    top: 13%;
+}
+
+/* hizmet sunumlari end */
+
+/* sayılarla biz start*/
+    .banner .slider {
+        width: 130px;
+        height: 150px;
+        top: 20%;
+        left: calc(50% - 70px);
+    }
+
+    .banner .slider .item {
+        transform:
+            rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(500px);
+    }
+
+    .banner .contentt {
+        background-color: #000;
+        color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: min(100%, 100vw);
+        height: max-content;
+        padding: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+    }
+    
+    .counter-board-number {
+        font-family: 'ICA Rubrik';
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1em;
+        color: #f4ff00;
+        position: relative;
+    }
+    
+    .banner .contentt p {
+        font-family: 'ICA Rubrik';
+        font-size: 40px;
+        line-height: 1em;
+        color: #f4ff00;
+        position: relative;
+    }
+/* sayılarla biz end*/
+
+/* iletişim start*/
+.maps {
+    overflow: hidden;
+}
+/* iletişim end*/
+}
+
+@media screen and (max-width: 999px) {
+/* anasayfa start */
+.carousel .list .item {
+    width: 155px;
+    height: 210px;
+    top: 80%;
+}
+.carousel .list .item:nth-child(3) {
+    left: 50%;
+}
+
+.carousel .list .item:nth-child(4) {
+    left: calc(71%);
+}
+
+.carousel .list .item:nth-child(5) {
+    left: calc(92%);
+}
+
+.carousel .list .item:nth-child(6) {
+    left: calc(92% + 200px);
+}
+
+.carousel .list .item:nth-child(n+7) {
+    left: calc(92% + 400px);
+    opacity: 0;
+}
+.list .item .content {
+    left: 70px;
+    top: 40%;
+}
+.content .title{
+    font-size: 65px;
+}
+.content .name {
+    font-size: 60px;
+}
+.content .des{
+    font-size: 35px;
+}
+.icerik {
+    margin-top: 25%;
+    margin-left: 25%;
+    font-size: 35px;
+}
+
+.icerik .menu__item a {
+    font-size: 35px;
+}
+
+.icerik .menu__item {
+    font-size: 35px;
+    margin-top: 20px;
+}
+/* anasayfa end */
+/* hakkımızda start */
+.hakkimizda_baslik {
+    font-size: 14px;
+}
+/* hakkımızda end */
+/* hizmet sunumlari start */
+.container1 {
+    margin-top: 25px;
+    font-size: 22px;
+}
+.eleman {
+    margin-top: 15px;
+    font-size: 18px;
+}
+.item1 {
+    width: 140px;
+    height: 160px;
+    top: 70%;
+    left: 69%;
+}
+
+.item2 {
+    width: 140px;
+    height: 160px;
+    left: 53%;
+    top: 90%;
+}
+
+.item3 {
+    width: 140px;
+    height: 160px;
+    left: 85%;
+    top: 90%;
+}
+.hizmet1 h2 {
+    font-size: 22px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet1 ul {
+    font-size: 14px;
+    top: 13%;
+}
+.hizmet2 h2 {
+    font-size: 22px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet2 ul {
+    font-size: 14px;
+    top: 13%;
+}
+.hizmet3 h2 {
+    font-size: 22px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet3 ul {
+    font-size: 14px;
+    top: 13%;
+}
+.hizmet4 h2 {
+    font-size: 22px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet4 ul {
+    font-size: 14px;
+    top: 13%;
+}
+.hizmet5 h2 {
+    font-size: 22px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet5 ul {
+    font-size: 14px;
+    top: 13%;
+}
+.hizmet6 h2 {
+    font-size: 22px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet6 ul {
+    font-size: 14px;
+    top: 13%;
+}
+.hizmet7 h2 {
+    font-size: 22px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet7 ul {
+    font-size: 14px;
+    top: 13%;
+}
+.hizmet8 h2 {
+    font-size: 22px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet8 ul {
+    font-size: 14px;
+    top: 13%;
+}
+.hizmet9 h2 {
+    font-size: 22px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet9 ul {
+    font-size: 14px;
+    top: 13%;
+}
+.hizmet10 h2 {
+    font-size: 22px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet10 ul {
+    font-size: 14px;
+    top: 13%;
+}
+.hizmet11 h2 {
+    font-size: 22px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet11 ul {
+    font-size: 14px;
+    top: 13%;
+}
+.hizmet12 h2 {
+    font-size: 22px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet12 ul {
+    font-size: 14px;
+    top: 13%;
+}
+/* hizmet sunumlari end */
+
+/* sayılarla biz start*/
+    .banner .slider {
+        width: 110px;
+        height: 125px;
+        left: calc(50% - 60px);
+    }
+
+    .banner .slider .item {
+        transform:
+            rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(400px);
+    }
+
+    .counter-board-number {
+        font-family: 'ICA Rubrik';
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1em;
+        color: #f4ff00;
+        position: relative;
+    }
+    
+    .banner .contentt p {
+        font-family: 'ICA Rubrik';
+        font-size: 30px;
+        line-height: 1em;
+        color: #f4ff00;
+        position: relative;
+    }
+/* sayılarla biz end*/
+
+/* iletişim start*/
+.maps {
+    overflow: hidden;
+}
+/* iletişim end*/
+
+}
+
+@media screen and (max-width: 767px) {
+/* anasayfa start */
+.arrows {
+    right: 55%;
+}
+
+.carousel .list .item {
+    width: 135px;
+    height: 180px;
+    top: 80%;
+}
+
+.carousel .list .item:nth-child(3) {
+    left: 45%;
+}
+
+.carousel .list .item:nth-child(4) {
+    left: calc(67%);
+}
+
+.carousel .list .item:nth-child(5) {
+    left: calc(89%);
+}
+
+.carousel .list .item:nth-child(6) {
+    left: calc(89% + 125px);
+}
+
+.carousel .list .item:nth-child(n+7) {
+    left: calc(89% + 275px);
+    opacity: 0;
+}
+
+.list .item .content {
+    top: 40%;
+}
+.content .title{
+    font-size: 50px;
+}
+.content .name {
+    font-size: 45px;
+}
+.content .des{
+    font-size: 25px;
+}
+
+.icerik {
+    margin-top: 25%;
+    margin-left: 20%;
+}
+
+.icerik .menu__item a {
+    font-size: 25px;
+}
+
+.icerik .menu__item {
+    margin-top: 7px;
+}
+/* anasayfa end */
+/* hakkımızda start */
+
+.hakkimizda_img {
+    display: none;
+}
+
+.hakkimizda_baslik {
+    padding-left: 10%;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+}
+/* hakkımızda end */
+/* hizmet sunumlari start */
+.container1 {
+    margin-top: 15px;
+    font-size: 19px;
+}
+.eleman {
+    margin-top: 15px;
+    font-size: 15px;
+}
+.item1 {
+    width: 100px;
+    height: 120px;
+    position: absolute;
+    top: 70%;
+    left: 69%;
+}
+
+.item2 {
+    width: 100px;
+    height: 120px;
+    left: 53%;
+    top: 85%;
+}
+
+.item3 {
+    width: 100px;
+    height: 120px;
+    left: 85%;
+    top: 85%;
+}
+
+.hizmet1 h2 {
+    font-size: 20px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet1 ul {
+    font-size: 14px;
+    top: 13%;
+}
+.hizmet2 h2 {
+    left: 58%;
+    top: 5%;
+    font-size: 20px;
+}
+.hizmet2 ul {
+    font-size: 14px;
+    top: 13%;
+}
+.hizmet3 h2 {
+    left: 58%;
+    top: 5%;
+    font-size: 20px;
+}
+.hizmet3 ul {
+    top: 13%;
+    font-size: 14px;
+}
+.hizmet4 h2 {
+    left: 58%;
+    top: 5%;
+    font-size: 20px;
+}
+.hizmet4 ul {
+    top: 13%;
+    font-size: 14px;
+}
+.hizmet5 h2 {
+    left: 58%;
+    top: 5%;
+    font-size: 20px;
+}
+.hizmet5 ul {
+    top: 13%;
+    font-size: 14px;
+}
+.hizmet6 h2 {
+    left: 58%;
+    top: 5%;
+    font-size: 20px;
+}
+.hizmet6 ul {
+    top: 13%;
+    font-size: 14px;
+}
+.hizmet7 h2 {
+    left: 58%;
+    top: 5%;
+    font-size: 20px;
+}
+.hizmet7 ul {
+    top: 13%;
+    font-size: 14px;
+}
+.hizmet8 h2 {
+    left: 58%;
+    top: 5%;
+    font-size: 20px;
+}
+.hizmet8 ul {
+    top: 13%;
+    font-size: 14px;
+}
+.hizmet9 h2 {
+    left: 58%;
+    top: 5%;
+    font-size: 20px;
+}
+.hizmet9 ul {
+    top: 13%;
+    font-size: 14px;
+}
+.hizmet10 h2 {
+    left: 58%;
+    top: 5%;
+    font-size: 20px;
+}
+.hizmet10 ul {
+    top: 13%;
+    font-size: 14px;
+}
+.hizmet11 h2 {
+    left: 58%;
+    top: 5%;
+    font-size: 20px;
+}
+.hizmet11 ul {
+    top: 13%;
+    font-size: 14px;
+}
+.hizmet12 h2 {
+    font-size: 20px;
+    top: 5%;
+    left: 58%;
+}
+.hizmet12 ul {
+    top: 13%;
+    font-size: 14px;
+}
+
+/* hizmet sunumlari end */
+/* sayılarla biz start*/
+    .banner .slider {
+        width: 80px;
+        height: 110px;
+        top: 25%;
+        left: calc(50% - 50px);
+    }
+
+    .banner .slider .item {
+        transform:
+            rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(350px);
+    }
+    .counter-board-number {
+        font-family: 'ICA Rubrik';
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 1em;
+        color: #f4ff00;
+        position: relative;
+    }
+    
+    .banner .contentt p {
+        font-family: 'ICA Rubrik';
+        font-size: 25px;
+        line-height: 1em;
+        color: #f4ff00;
+        position: relative;
+    }
+    
+/* sayılarla biz end*/
+
+/* iletişim start*/
+.maps {
+    overflow: hidden;
+}
+/* iletişim end*/
+}
+
+@media screen and (max-width: 690px) {
+/* anasayfa start */
+.arrows {
+    right: 55%;
+}
+
+.carousel .list .item {
+    width: 110px;
+    height: 150px;
+    top: 75%;
+}
+
+.carousel .list .item:nth-child(3) {
+    left: 45%;
+}
+
+.carousel .list .item:nth-child(4) {
+    left: calc(70%);
+}
+
+.carousel .list .item:nth-child(5) {
+    left: calc(95%);
+}
+
+.carousel .list .item:nth-child(6) {
+    left: calc(95% + 125px);
+}
+
+.carousel .list .item:nth-child(n+7) {
+    left: calc(95% + 275px);
+    opacity: 0;
+}
+
+
+.list .item .content {
+    top: 33%;
+    left: 25px;
+}
+.content .title{
+    font-size: 50px;
+}
+.content .name {
+    font-size: 45px;
+}
+.content .des{
+    font-size: 25px;
+}
+
+.icerik {
+    margin-top: 40%;
+    margin-left: 20%;
+}
+
+.icerik .menu__item a {
+    font-size: 25px;
+}
+
+.icerik .menu__item {
+    margin-top: 7px;
+}
+.menu_icon_box {
+    left: 88%;
+}
+.social_box {
+    left: 88%;
+}
+#hiz-uretir{
+    color: #fff !important;
+}
+/* anasayfa end */
+/* hakkımızda start */
+.hakkimizda_img {
+    display: none;
+}
+
+.hakkimizda_baslik {
+    padding-left: 10%;
+    width: 100%;
+    height: 100%;
+    font-size: 11px;
+}
+/* hakkımızda end */
+/* hizmet sunumlari start */
+.container1 {
+    margin-top: 15px;
+    font-size: 15px;
+}
+.eleman {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.item1 {
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    top: 70%;
+    left: 69%;
+}
+
+.item2 {
+    width: 80px;
+    height: 100px;
+    left: 53%;
+    top: 85%;
+}
+
+.item3 {
+    width: 80px;
+    height: 100px;
+    left: 85%;
+    top: 85%;
+}
+.hizmet1 h2 {
+    font-size: 15px;
+    top: 5%;
+    left: 55%;
+}
+
+.hizmet1 ul {
+    font-weight: 600;
+    font-size: 12px;
+    top: 13%;
+}
+.hizmet2 h2 {
+    font-size: 15px;
+    top: 5%;
+    left: 55%;
+}
+.hizmet2 ul {
+    font-weight: 600;
+    font-size: 12px;
+    top: 13%;
+}
+.hizmet3 h2 {
+    font-size: 15px;
+    top: 5%;
+    left: 55%;
+}
+.hizmet3 ul {
+    font-weight: 600;
+    font-size: 12px;
+    top: 13%;
+}
+.hizmet4 h2 {
+    font-size: 15px;
+    top: 5%;
+    left: 55%;
+}
+.hizmet4 ul {
+    font-weight: 600;
+    font-size: 12px;
+    top: 13%;
+}
+.hizmet5 h2 {
+    font-size: 15px;
+    top: 5%;
+    left: 55%;
+}
+.hizmet5 ul {
+    font-weight: 600;
+    font-size: 12px;
+    top: 13%;
+}
+.hizmet6 h2 {
+    font-size: 15px;
+    top: 5%;
+    left: 55%;
+}
+.hizmet6 ul {
+    font-weight: 600;
+    font-size: 12px;
+    top: 13%;
+}
+.hizmet7 h2 {
+    font-size: 15px;
+    top: 5%;
+    left: 55%;
+}
+.hizmet7 ul {
+    font-weight: 600;
+    font-size: 12px;
+    top: 13%;
+}
+.hizmet8 h2 {
+    font-size: 15px;
+    top: 5%;
+    left: 55%;
+}
+.hizmet8 ul {
+    font-weight: 600;
+    font-size: 12px;
+    top: 13%;
+}
+.hizmet9 h2 {
+    font-size: 15px;
+    top: 5%;
+    left: 55%;
+}
+.hizmet9 ul {
+    font-weight: 600;
+    font-size: 12px;
+    top: 13%;
+}
+.hizmet10 h2 {
+    font-size: 15px;
+    top: 5%;
+    left: 55%;
+}
+.hizmet10 ul {
+    font-weight: 600;
+    font-size: 12px;
+    top: 13%;
+}
+.hizmet11 h2 {
+    font-size: 15px;
+    top: 5%;
+    left: 55%;
+}
+.hizmet11 ul {
+    font-weight: 600;
+    font-size: 12px;
+    top: 13%;
+}
+.hizmet12 h2 {
+    font-size: 15px;
+    top: 5%;
+    left: 55%;
+}
+.hizmet12 ul {
+    font-weight: 600;
+    font-size: 12px;
+    top: 13%;
+}
+/* hizmet sunumlari end */
+
+/* sayılarla biz start*/
+    .banner .slider {
+        width: 60px;
+        height: 90px;
+        top: 30%;
+        left: calc(50% - 40px);
+    }
+
+    .banner .slider .item {
+        transform:
+            rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(240px);
+    }
+
+    .counter-board-number {
+        font-family: 'ICA Rubrik';
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 1em;
+        color: #f4ff00;
+        position: relative;
+    }
+    
+    .banner .contentt p {
+        font-family: 'ICA Rubrik';
+        font-size: 15px;
+        line-height: 1em;
+        color: #f4ff00;
+        position: relative;
+    }
+/* sayılarla biz end*/
+
+/* iletişim start*/
+.destek {
+    width: 100%;
+    height: 50%;
+    font-size: 8px;
+    overflow: auto;
+}
+.maps {
+    width: 100%;
+    height: 49%;
+    overflow: hidden;
+}
+.logo_footer img{
+    width: 200px;
+    height: 100px;
+}
+.sosyal{
+    display: none;
+}
+
+/* iletişim end*/
+}
