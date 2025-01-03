@@ -2237,7 +2237,7 @@ body {
     /* anasayfa start */
     .arrows {
         right: 55%;
-        top: 65%;
+        top: 70%;
     }
     
     .carousel .list .item {
@@ -2286,8 +2286,8 @@ body {
         margin-top: -950px;
     }
     .icerik {
-        margin-top: 55%;
-        margin-left: 13%;
+        margin-top: 45%;
+        margin-left: 5%;
     }
     
     .icerik .menu__item a {
@@ -2488,7 +2488,7 @@ body {
     
         .counter-board-number {
             font-family: 'ICA Rubrik';
-            font-size: 15px;
+            font-size: 13px;
             font-weight: 600;
             line-height: 1em;
             color: #f4ff00;
@@ -2497,7 +2497,7 @@ body {
         
         .banner .contentt p {
             font-family: 'ICA Rubrik';
-            font-size: 15px;
+            font-size: 13px;
             line-height: 1em;
             color: #f4ff00;
             position: relative;
