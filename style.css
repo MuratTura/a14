@@ -2231,3 +2231,298 @@ body {
 
 /* iletişim end*/
 }
+
+
+@media screen and (max-width: 435px) {
+    /* anasayfa start */
+    .arrows {
+        right: 55%;
+        top: 75%;
+    }
+    
+    .carousel .list .item {
+        width: 85px;
+        height: 130px;
+        top: 75%;
+    }
+    
+    .carousel .list .item:nth-child(3) {
+        left: 45%;
+    }
+    
+    .carousel .list .item:nth-child(4) {
+        left: calc(70%);
+    }
+    
+    .carousel .list .item:nth-child(5) {
+        left: calc(95%);
+    }
+    
+    .carousel .list .item:nth-child(6) {
+        left: calc(95% + 125px);
+    }
+    
+    .carousel .list .item:nth-child(n+7) {
+        left: calc(95% + 275px);
+        opacity: 0;
+    }
+    
+    
+    .list .item .content {
+        top: 33%;
+        left: 25px;
+    }
+    .content .title{
+        font-size: 50px;
+    }
+    .content .name {
+        font-size: 45px;
+    }
+    .content .des{
+        font-size: 25px;
+    }
+    
+    .navvv {
+        margin-top: -950px;
+    }
+    .icerik {
+        margin-top: 55%;
+        margin-left: 13%;
+    }
+    
+    .icerik .menu__item a {
+        font-size: 25px;
+    }
+    
+    .icerik .menu__item {
+        margin-top: 7px;
+    }
+    .menu_icon_box {
+        left: 85%;
+    }
+    .social_box {
+        left: 85%;
+    }
+    #hiz-uretir{
+        color: #fff !important;
+    }
+    /* anasayfa end */
+    /* hakkımızda start */
+    .hakkimizda_img {
+        display: none;
+    }
+    
+    .hakkimizda_baslik {
+        padding-left: 10%;
+        width: 100%;
+        height: 100%;
+        font-size: 11px;
+    }
+    /* hakkımızda end */
+    /* hizmet sunumlari start */
+    .container1 {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+    .eleman {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+    
+    .item1 {
+        width: 80px;
+        height: 100px;
+        position: absolute;
+        top: 70%;
+        left: 69%;
+    }
+    
+    .item2 {
+        width: 80px;
+        height: 100px;
+        left: 53%;
+        top: 85%;
+    }
+    
+    .item3 {
+        width: 80px;
+        height: 100px;
+        left: 85%;
+        top: 85%;
+    }
+    .hizmet1 h2 {
+        font-size: 15px;
+        top: 5%;
+        left: 55%;
+    }
+    
+    .hizmet1 ul {
+        font-weight: 600;
+        font-size: 12px;
+        top: 13%;
+    }
+    .hizmet2 h2 {
+        font-size: 15px;
+        top: 5%;
+        left: 55%;
+    }
+    .hizmet2 ul {
+        font-weight: 600;
+        font-size: 12px;
+        top: 13%;
+    }
+    .hizmet3 h2 {
+        font-size: 15px;
+        top: 5%;
+        left: 55%;
+    }
+    .hizmet3 ul {
+        font-weight: 600;
+        font-size: 12px;
+        top: 13%;
+    }
+    .hizmet4 h2 {
+        font-size: 15px;
+        top: 5%;
+        left: 55%;
+    }
+    .hizmet4 ul {
+        font-weight: 600;
+        font-size: 12px;
+        top: 13%;
+    }
+    .hizmet5 h2 {
+        font-size: 15px;
+        top: 5%;
+        left: 55%;
+    }
+    .hizmet5 ul {
+        font-weight: 600;
+        font-size: 12px;
+        top: 13%;
+    }
+    .hizmet6 h2 {
+        font-size: 15px;
+        top: 5%;
+        left: 55%;
+    }
+    .hizmet6 ul {
+        font-weight: 600;
+        font-size: 12px;
+        top: 13%;
+    }
+    .hizmet7 h2 {
+        font-size: 15px;
+        top: 5%;
+        left: 55%;
+    }
+    .hizmet7 ul {
+        font-weight: 600;
+        font-size: 12px;
+        top: 13%;
+    }
+    .hizmet8 h2 {
+        font-size: 15px;
+        top: 5%;
+        left: 55%;
+    }
+    .hizmet8 ul {
+        font-weight: 600;
+        font-size: 12px;
+        top: 13%;
+    }
+    .hizmet9 h2 {
+        font-size: 15px;
+        top: 5%;
+        left: 55%;
+    }
+    .hizmet9 ul {
+        font-weight: 600;
+        font-size: 12px;
+        top: 13%;
+    }
+    .hizmet10 h2 {
+        font-size: 15px;
+        top: 5%;
+        left: 55%;
+    }
+    .hizmet10 ul {
+        font-weight: 600;
+        font-size: 12px;
+        top: 13%;
+    }
+    .hizmet11 h2 {
+        font-size: 15px;
+        top: 5%;
+        left: 55%;
+    }
+    .hizmet11 ul {
+        font-weight: 600;
+        font-size: 12px;
+        top: 13%;
+    }
+    .hizmet12 h2 {
+        font-size: 15px;
+        top: 5%;
+        left: 55%;
+    }
+    .hizmet12 ul {
+        font-weight: 600;
+        font-size: 12px;
+        top: 13%;
+    }
+    /* hizmet sunumlari end */
+    
+    /* sayılarla biz start*/
+        .banner .slider {
+            width: 60px;
+            height: 90px;
+            top: 30%;
+            left: calc(50% - 40px);
+        }
+    
+        .banner .slider .item {
+            transform:
+                rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(240px);
+        }
+    
+        .counter-board-number {
+            font-family: 'ICA Rubrik';
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1em;
+            color: #f4ff00;
+            position: relative;
+        }
+        
+        .banner .contentt p {
+            font-family: 'ICA Rubrik';
+            font-size: 15px;
+            line-height: 1em;
+            color: #f4ff00;
+            position: relative;
+        }
+    /* sayılarla biz end*/
+    
+    /* iletişim start*/
+    .destek {
+        width: 100%;
+        height: 50%;
+        font-size: 8px;
+        overflow: auto;
+    }
+    .maps {
+        width: 100%;
+        height: 49%;
+        overflow: hidden;
+    }
+    .logo_footer img{
+        width: 200px;
+        height: 100px;
+    }
+    .sosyal{
+        display: none;
+    }
+    
+    /* iletişim end*/
+    }
